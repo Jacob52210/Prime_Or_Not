@@ -1,2 +1,11 @@
-# Prime_Or_Not
-Check to see if your number is a prime number or not.
+# Prime Or Not
+*By: Jacob Flora*
+## Description
+*I wrote an algorithm to check if your number is prime or not. This is to demonstrate my basic JavaScript knowledge.*
+#### Hosted [HERE](  " ").
+
+## Technologies Used
+* HTML
+* CSS
+* SCSS
+* JavaScript
