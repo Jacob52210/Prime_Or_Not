@@ -6,14 +6,13 @@ function checkIfPrime(number){
   if(number>1){
     for(n=2; n<number; n++){
       if(number % n === 0 && number !== 1){
-        console.log(`Your number, ${number}, is not prime.`);
+        document.getElementById('results').innerHTML = `Your number, ${number}, is not prime.`
         return;
       } 
     }
-    
-    console.log(`Your number, ${number}, is prime.`);
+    document.getElementById('results').innerHTML = `Your number, ${number}, is prime.`
     return; 
-  }  console.log(`Your number, ${number}, is either one or less.`);
+  } document.getElementById('results').innerHTML = `Your number, ${number}, is either ONE or less.`
 }
 
 function handleForm(e){
@@ -21,7 +20,7 @@ function handleForm(e){
 
   e.preventDefault();
   if(numInput === ""){
-    console.log("Please enter a number.");
+    document.getElementById('results').innerHTML = `Please enter a number.`
   } else {
     checkIfPrime(numInput.trim());
   }
